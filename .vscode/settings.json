@@ -1,0 +1,10 @@
+{
+    "cucumberautocomplete.customParameters": [
+         
+    ],
+    "cucumberautocomplete.strictGherkinCompletion": true,
+    "cucumberautocomplete.steps": [
+        "cypress/support/step_definitions/*.js"
+    ]
+    
+}
