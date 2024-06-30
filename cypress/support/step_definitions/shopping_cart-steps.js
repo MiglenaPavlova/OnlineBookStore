@@ -45,11 +45,11 @@ Then('I should see the checkout page', () => {
 
 When('I enter billing and shipping details', () => {
 
-  CheckoutPage.fillBillinggDetails(BillingDetails.firstName, BillingDetails.lastName, BillingDetails.email,
-    BillingDetails.street, BillingDetails.city, BillingDetails.postalCode, fixtures.firstName);
+  CheckoutPage.fillShippingDetails(fixtures.firstName, fixtures.lastName, fixtures.email,
+    fixtures.street, fixtures.city, fixtures.postalCode);
 
-  CheckoutPage.fillShippingDetails(ShipingDetails.firstName, ShipingDetails.lastName, ShipingDetails.email,
-    ShipingDetails.street, ShipingDetails.city, ShipingDetails.postalCode);
+  CheckoutPage.fillBillinggDetails(fixtures.cardNumber, fixtures.cardHolderName, fixtures.expirationDate,
+    fixtures.CVV);
 });
 
 Then('I should see the order confirmation page', () => {
